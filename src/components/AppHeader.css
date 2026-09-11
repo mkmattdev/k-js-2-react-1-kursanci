@@ -1,0 +1,9 @@
+.app-header__title {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.app-header__subtitle {
+  margin: 0 0 24px;
+  color: #6b7280;
+}
