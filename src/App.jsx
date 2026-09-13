@@ -1,16 +1,5 @@
-import "./App.css";
-import AppHeader from "./components/AppHeader";
-import { orders } from "./data/orders";
+import ComponentDemo from "./01-components/ComponentDemo";
 
-// Tutaj zaczynamy. Własne komponenty wstawiamy do src/components/, dane do src/data/.
 export default function App() {
-  return (
-    <div className="app">
-      <AppHeader title="Projekt React" subtitle="Tu powstaje nasza aplikacja" />
-
-      <main>
-        <p>Zamówień w danych startowych: {orders.length}</p>
-      </main>
-    </div>
-  );
+  return <ComponentDemo />;
 }
