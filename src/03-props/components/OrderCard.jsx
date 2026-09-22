@@ -1,4 +1,7 @@
-export default function OrderCard({ id, customer, note, totalPln }) {
+// W parametrze funkcji odczytujemy konkretne pola z obiektu propsów.
+// Dla note ustawiamy wartość domyślną, używaną wtedy, gdy ten props nie został przekazany
+// lub ma wartość undefined.
+export default function OrderCard({ id, customer, totalPln, note = "brak uwag" }) {
   return (
     <article className="card">
       <h3 className="card__title">{id}</h3>

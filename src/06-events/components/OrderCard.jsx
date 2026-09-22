@@ -1,3 +1,6 @@
+// Do onClick przekazujemy funkcję handlePack. React wywoła ją po kliknięciu przycisku.
+// Zapis handlePack() wywołałby ją od razu podczas renderowania.
+// Funkcja korzysta z id i customer przekazanych w propsach.
 export default function OrderCard({ id, customer, totalPln }) {
   const handlePack = () => {
     console.log(`Pakujemy ${id} dla: ${customer}`);
@@ -11,7 +14,7 @@ export default function OrderCard({ id, customer, totalPln }) {
           Spakuj
         </button>
       </div>
-      <p className="card__total">Razem: {totalPln.toFixed(2)}</p>
+      <p className="card__total">Razem: {totalPln.toFixed(2)} zł</p>
     </article>
   );
 }

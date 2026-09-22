@@ -1,5 +1,7 @@
 const PRIORITY_PLN = 1000;
 
+// Operator ? : wybiera klasę i tekst zależnie od isPaid. Nazwy klas łączymy w zapisie z backtickami.
+// Warunki z && pozwalają pokazać uwagi oraz informację o zamówieniu o wartości co najmniej PRIORITY_PLN.
 export default function OrderCard({ id, customer, totalPln, isPaid, note }) {
   return (
     <article className={`card ${isPaid ? "card--ok" : "card--warn"}`}>
@@ -12,18 +14,7 @@ export default function OrderCard({ id, customer, totalPln, isPaid, note }) {
       <p className="card__row">Klient: {customer}</p>
       {note && <p className="card__row">Uwagi: {note}</p>}
       {totalPln >= PRIORITY_PLN && <p className="card__row">Priorytet: duże zamówienie</p>}
-      <p className="card__total">Razem: {totalPln.toFixed(2)}</p>
+      <p className="card__total">Razem: {totalPln.toFixed(2)} zł</p>
     </article>
   );
 }
-
-// BEM - metodyka nazywania klas CSSowych - "B - block, E - element, M - modifier"
-// block__element--modifier
-
-// Np. card, badge - to są bloki
-// card__header, card__title - to są elementy
-// card--ok, card--warn - to są modyfikatory
-
-// ANTY-PATTERNY
-// 1. block__element1__element2 <- NIE MOZNA
-// 2. <article className="card--ok"></article>

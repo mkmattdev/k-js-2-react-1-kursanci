@@ -1,3 +1,5 @@
+// Fragment <> </> pozwala zwrócić kilka elementów razem.
+// Sam fragment nie dodaje żadnego elementu do HTML, w przeciwieństwie do <div>.
 export default function PanelHeader() {
   return (
     <>

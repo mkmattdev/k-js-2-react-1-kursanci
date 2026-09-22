@@ -1,3 +1,5 @@
+// W klamrach {} wstawiamy wartości zmiennych lub wyniki wyrażeń JavaScript.
+// Kwotę obliczamy przed return, a w JSX wyświetlamy wynik i formatujemy go przez toFixed(2).
 export default function OrderCard() {
   const order = {
     id: "ZAM-1042",
@@ -6,7 +8,6 @@ export default function OrderCard() {
     unitPricePln: 3499.75,
     itemCount: 2,
   };
-
   const { id, customer, email, unitPricePln, itemCount } = order;
   const totalPln = unitPricePln * itemCount;
 
@@ -18,7 +19,7 @@ export default function OrderCard() {
       </p>
       <p className="card__row">
         Sztuk: {itemCount}, cena: {unitPricePln.toFixed(2)} zł <br />
-        Razem: {totalPln.toFixed(2)}
+        Razem: {totalPln.toFixed(2)} zł
       </p>
     </article>
   );

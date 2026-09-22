@@ -1,0 +1,65 @@
+.panel,
+.card {
+  font-family: system-ui, sans-serif;
+}
+
+.card {
+  padding: 14px 16px;
+  border: 1px solid #dfe3e8;
+  border-left: 4px solid #dfe3e8;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #ffffff;
+}
+
+.card--ok {
+  border-left-color: #157f3d;
+}
+
+.card--warn {
+  border-left-color: #92400e;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card__row {
+  margin: 4px 0;
+  color: #6b7280;
+}
+
+.card__total {
+  margin: 8px 0 0;
+  font-weight: 600;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge--ok {
+  background: #e4f5ea;
+  color: #157f3d;
+}
+
+.badge--warn {
+  background: #fdf1dc;
+  color: #92400e;
+}
+
+.panel__summary {
+  margin: 16px 0 0;
+  font-weight: 600;
+}

@@ -1,6 +1,13 @@
-import OrderCard from "./components/OrderCard";
-import "./props.css";
+////////
+//// 3. Propsy, czyli argumenty komponentu
+////////
+//
+// Więcej o tym temacie: https://react.dev/learn/passing-props-to-a-component
 
+import "./props.css";
+import OrderCard from "./components/OrderCard";
+
+// Napis podajemy w cudzysłowie, liczbę i zmienną w klamrach. Druga karta nie dostaje note.
 export default function Lesson() {
   const lastCustomer = "Mateusz Lis";
 
@@ -17,3 +24,7 @@ export default function Lesson() {
     </section>
   );
 }
+
+// Błąd - customer = "Ktoś" w OrderCard zmieni lokalny parametr, ale nie dane w rodzicu.
+
+// Każda karta korzysta z tego samego komponentu, ale dostaje inne dane przez propsy.
