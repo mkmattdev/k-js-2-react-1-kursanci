@@ -1,0 +1,44 @@
+.panel,
+.card {
+  font-family: system-ui, sans-serif;
+}
+
+.card {
+  padding: 14px 16px;
+  border: 1px solid #dfe3e8;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #ffffff;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card__row {
+  margin: 4px 0;
+  color: #6b7280;
+}
+
+.card__total {
+  margin: 8px 0 0;
+  font-weight: 600;
+}
+
+.button {
+  padding: 8px 14px;
+  border: 1px solid #1f6feb;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f6feb;
+  font: inherit;
+  cursor: pointer;
+}
