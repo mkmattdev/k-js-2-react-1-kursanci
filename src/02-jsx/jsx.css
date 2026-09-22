@@ -1,0 +1,31 @@
+.panel,
+.card {
+  font-family: system-ui, sans-serif;
+}
+
+.panel__title {
+  margin: 0 0 4px;
+  font-size: 22px;
+}
+
+.panel__subtitle {
+  margin: 0 0 16px;
+  color: #6b7280;
+}
+
+.card {
+  padding: 16px 18px;
+  border: 1px solid #dfe3e8;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.card__title {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.card__row {
+  margin: 4px 0;
+  color: #6b7280;
+}
