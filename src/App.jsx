@@ -1,4 +1,4 @@
-import Lesson from "./05-list/Lesson";
+import Lesson from "./06-events/Lesson";
 
 export default function App() {
   return <Lesson />;
