@@ -1,5 +1,5 @@
-import Task from "./01-components-task/Task";
+import Lesson from "./02-jsx/Lesson";
 
 export default function App() {
-  return <Task />;
+  return <Lesson />;
 }
