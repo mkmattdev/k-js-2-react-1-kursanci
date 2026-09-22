@@ -1,5 +1,5 @@
-import ComponentDemo from "./01-components/ComponentDemo";
+import Task from "./01-components-task/Task";
 
 export default function App() {
-  return <ComponentDemo />;
+  return <Task />;
 }
