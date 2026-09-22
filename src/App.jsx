@@ -1,4 +1,4 @@
-import Lesson from "./02-jsx/Lesson";
+import Lesson from "./03-props/Lesson";
 
 export default function App() {
   return <Lesson />;
